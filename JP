@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+class koodi{
+public:
+    void koodia(){
+        cout << "Valitsemalla seuraavanlaisesti:\n1 - koodi\n2 - arduino\n3 - elektroniikka\n";
+        int numero;
+        cin >> numero;
+            if (numero == 1){
+                cout << "Koodi toimii";
+            }
+            else if(numero == 2){
+                cout << "Arduino toimii";
+            }
+            else if(numero == 3){
+                cout << "Elektroniikka toimii";
+            }
+
+    };
+};
+
+int main(){
+    while(1){
+        cout << "Toimiiko, jos toimii valitse a ";
+        char kirjain;
+        cin >> kirjain;
+
+        switch(kirjain){
+
+            case 'a':
+                koodi koodiObj;
+                koodiObj.koodia();
+                break;
+
+        }
+    }
+}
